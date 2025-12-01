@@ -1,18 +1,14 @@
-import pytest
-def product_details(name, product_id, quantity, price):
-    result = (
-        f"product Name: {name}\n"
-        f"productID: {product_id}\n"
-        f"product quantity: {quantity}\n"
-        f"price: {price}"
+def product_info(product_id, name, quantity, price):
+    return (
+        f"Product ID: {product_id}\n"
+        f"Name: {name}\n"
+        f"Quantity: {quantity}\n"
+        f"Price: {price}"
     )
-    return result
-
-if __name__ == "__main__":
-    # Sample values
-    name = "shampoo"
-    product_id = "E1001"
-    product_quantity = "3"
-    price= 300
-
-    print(product_details(name, product_id, product_quantity, price))
+if _name_ == "_main_":
+    product_id = "P102"
+    name = "Keyboard"
+    quantity = 5
+    price = 799.50
+    print("Product Details:\n")
+    print(product_info(product_id, name, quantity, price))
