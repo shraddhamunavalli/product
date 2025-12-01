@@ -1,10 +1,11 @@
-from pytest.pytest1.employee import product_details
-def test_product_details():
-    excepted_output = (
-        "product Name: shampoo\n"
-        "product ID: E1001\n"
-        "product quantity: 3\n"
-        "price: 300"
+from product import product_info
+
+def test_product_info():
+    expected_output = (
+        "Product ID: P102\n"
+        "Name: Keyboard\n"
+        "Quantity: 5\n"
+        "Price: 799.5"
     )
-    assert product_details("shampoo","E1001","3",300)== excepted_output
-    
+    result = product_info("P102", "Keyboard", 5, 799.5)
+    assert result == expected_output
